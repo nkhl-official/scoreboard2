@@ -1,0 +1,80 @@
+<!doctype html>
+<main class="scoreboard">
+<section class="team team-left">
+<div class="team-top">
+<div class="logo-wrap"><img id="logoLeft" src="assets/teams/team1.svg" alt="Home logo"></div>
+<div class="team-info">
+<input class="team-name" id="teamLeftName" value="HOME" />
+<div class="meta">
+<div class="shots">SOG <button class="shot-btn" data-team="left" data-op="dec">-</button> <span id="shotsLeft">0</span> <button class="shot-btn" data-team="left" data-op="inc">+</button></div>
+<div class="score"> <button class="score-btn" data-team="left" data-op="dec">-</button> <div id="scoreLeft">0</div> <button class="score-btn" data-team="left" data-op="inc">+</button></div>
+</div>
+</div>
+</div>
+
+
+<div class="penalties" id="penaltiesLeft">
+<!-- two penalty slots -->
+</div>
+
+
+<div class="players" id="playersLeft">
+<!-- skater slots and goalie slots rendered by JS -->
+</div>
+</section>
+
+
+<section class="center">
+<div class="clock" id="clock" tabindex="0">20:00</div>
+<div class="controls">
+<div class="period" id="period">1</div>
+<div class="time-controls">
+<button id="editClock">Edit</button>
+<button id="startStop">Start</button>
+</div>
+<div class="sound-controls">
+<button id="buzzerBtn">Buzzer</button>
+<button id="goalHornBtn">Goal Horn</button>
+</div>
+</div>
+</section>
+
+
+<section class="team team-right">
+<div class="team-top">
+<div class="team-info">
+<input class="team-name" id="teamRightName" value="AWAY" />
+<div class="meta">
+<div class="shots">SOG <button class="shot-btn" data-team="right" data-op="dec">-</button> <span id="shotsRight">0</span> <button class="shot-btn" data-team="right" data-op="inc">+</button></div>
+<div class="score"> <button class="score-btn" data-team="right" data-op="dec">-</button> <div id="scoreRight">0</div> <button class="score-btn" data-team="right" data-op="inc">+</button></div>
+</div>
+</div>
+<div class="logo-wrap"><img id="logoRight" src="assets/teams/team2.svg" alt="Away logo"></div>
+</div>
+
+
+<div class="penalties" id="penaltiesRight">
+<!-- two penalty slots -->
+</div>
+
+
+<div class="players" id="playersRight">
+<!-- skater slots and goalie slots rendered by JS -->
+</div>
+</section>
+</main>
+
+
+<footer class="legend">
+<div class="legend-item">Tap names, scores, shots, penalties, and stats to edit. Click clock to start/pause. Period cycles 1→9→0→1.</div>
+</footer>
+</div>
+
+
+<audio id="buzzerAudio" src="assets/buzzer.mp3"></audio>
+<audio id="goalAudio" src="assets/goal_horn.mp3"></audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>
